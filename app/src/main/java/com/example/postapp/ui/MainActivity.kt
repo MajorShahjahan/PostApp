@@ -1,21 +1,21 @@
-package com.example.postapp
+package com.example.postapp.ui
 
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
-import android.util.Log
-import android.widget.LinearLayout
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
+import com.example.postapp.R
 import com.example.postapp.api.PostService
 import com.example.postapp.api.RetrofitHelper
+import com.example.postapp.listeners.ItemClickListener
 import com.example.postapp.repository.PostRepository
 import com.example.postapp.viewmodels.MainViewModel
 import com.example.postapp.viewmodels.MainViewModelFactory
 
-class MainActivity : AppCompatActivity(),ItemClickListener {
+class MainActivity : AppCompatActivity(), ItemClickListener {
 
     lateinit var mainViewModel: MainViewModel
     lateinit var recyclerView: RecyclerView

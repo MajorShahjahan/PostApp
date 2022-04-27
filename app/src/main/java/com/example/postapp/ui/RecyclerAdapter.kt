@@ -1,12 +1,13 @@
-package com.example.postapp
+package com.example.postapp.ui
 
-import android.text.style.TtsSpan
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
 import androidx.cardview.widget.CardView
 import androidx.recyclerview.widget.RecyclerView
+import com.example.postapp.R
+import com.example.postapp.listeners.ItemClickListener
 import com.example.postapp.models.PostList
 
 class RecyclerAdapter(private val mList: PostList, val mListener: ItemClickListener) : RecyclerView.Adapter<RecyclerAdapter.ViewHolder>() {
